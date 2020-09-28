@@ -1,0 +1,30 @@
+apiVersion: v1
+entries:
+  nginx:
+  - apiVersion: v1
+    appVersion: "1"
+    created: "2020-09-28T21:42:57.207112389+02:00"
+    digest: a47cf58147e04e35ef0bf8da875991f1a280d2fb65ba1ef7996dbb2e4436fa58
+    name: nginx
+    urls:
+    - https://gabrielfdosreis.github.io/my-chart-repo/nginx-1.0.0.tgz
+    version: 1.0.0
+  vclass:
+  - apiVersion: v1
+    appVersion: "1"
+    created: "2020-09-28T21:42:57.207589156+02:00"
+    digest: b61999c71e2260559a36e6c7c5bafafdd073cec981dacfe9b01ab7f67ef8b584
+    name: vclass
+    urls:
+    - https://gabrielfdosreis.github.io/my-chart-repo/vclass-1.0.0.tgz
+    version: 1.0.0
+  vcpe:
+  - apiVersion: v1
+    appVersion: "1"
+    created: "2020-09-28T21:42:57.2079556+02:00"
+    digest: 837984ef752935b27138cb4f5795977027ccd77b2d4d5a87aab1d6d6d488cba0
+    name: vcpe
+    urls:
+    - https://gabrielfdosreis.github.io/my-chart-repo/vcpe-1.0.0.tgz
+    version: 1.0.0
+generated: "2020-09-28T21:42:57.2004674+02:00"
