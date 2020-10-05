@@ -6,7 +6,7 @@ metadata:
 {{ include "vclass.labels" . | indent 4 }}
 spec:
   type: {{ .Values.service.type }}
-  # ports:
+  ports: {}
   selector:
     app.kubernetes.io/name: {{ include "vclass.name" . }}
     app.kubernetes.io/instance: {{ .Release.Name }}

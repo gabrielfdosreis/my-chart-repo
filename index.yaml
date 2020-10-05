@@ -3,7 +3,7 @@ entries:
   nginx:
   - apiVersion: v1
     appVersion: "1"
-    created: "2020-10-05T15:08:30.240825956+02:00"
+    created: "2020-10-05T15:10:45.88806985+02:00"
     digest: a47cf58147e04e35ef0bf8da875991f1a280d2fb65ba1ef7996dbb2e4436fa58
     name: nginx
     urls:
@@ -12,7 +12,16 @@ entries:
   vclass:
   - apiVersion: v1
     appVersion: "1"
-    created: "2020-10-05T15:08:30.244924979+02:00"
+    created: "2020-10-05T15:10:45.890032859+02:00"
+    description: A chart for using as vclass VNF
+    digest: 17a308ea390f553b947e9200208fb631749b3e44db5cedd8131c109b394ece53
+    name: vclass
+    urls:
+    - https://gabrielfdosreis.github.io/my-chart-repo/vclass-1.1.2.tgz
+    version: 1.1.2
+  - apiVersion: v1
+    appVersion: "1"
+    created: "2020-10-05T15:10:45.889483326+02:00"
     description: A chart for using as vclass VNF
     digest: abffbcc2440f03cfc7b5806e7ed2a894f4935d2eeade6573073fa208fed4f117
     name: vclass
@@ -21,7 +30,7 @@ entries:
     version: 1.1.1
   - apiVersion: v1
     appVersion: "1"
-    created: "2020-10-05T15:08:30.244587825+02:00"
+    created: "2020-10-05T15:10:45.889070111+02:00"
     description: A chart for using as vclass VNF
     digest: 8b462d6f4a1f28892ca891c6840aaee8a713ade07d8a1d913921e419ee61c0ed
     name: vclass
@@ -30,7 +39,7 @@ entries:
     version: 1.1.0
   - apiVersion: v1
     appVersion: "1"
-    created: "2020-10-05T15:08:30.241165571+02:00"
+    created: "2020-10-05T15:10:45.888464533+02:00"
     description: A chart for using as vclass VNF
     digest: 1e94c214f9a4d2869c878ae38f5c46045262b75c048963425a7d376e57088ce6
     name: vclass
@@ -40,7 +49,16 @@ entries:
   vcpe:
   - apiVersion: v1
     appVersion: "1"
-    created: "2020-10-05T15:08:30.245934472+02:00"
+    created: "2020-10-05T15:10:45.89249724+02:00"
+    description: A chart for using as vcpe VNF
+    digest: 8efeb31157c8dae0e4bc947f32b8c08a5c395c132713780c782959a72834f5c2
+    name: vcpe
+    urls:
+    - https://gabrielfdosreis.github.io/my-chart-repo/vcpe-1.1.2.tgz
+    version: 1.1.2
+  - apiVersion: v1
+    appVersion: "1"
+    created: "2020-10-05T15:10:45.891973397+02:00"
     description: A chart for using as vcpe VNF
     digest: d6a10eed79b014b3eaf5dcfa7db532d3831584b8ec0ba0ef76d7bc808498d1e4
     name: vcpe
@@ -49,7 +67,7 @@ entries:
     version: 1.1.1
   - apiVersion: v1
     appVersion: "1"
-    created: "2020-10-05T15:08:30.245618639+02:00"
+    created: "2020-10-05T15:10:45.891000917+02:00"
     description: A chart for using as vcpe VNF
     digest: 9c5563caaf6dd734f8538b3df0f2b2a0bde1620c8a40aa9c5b744b485c9a581e
     name: vcpe
@@ -58,11 +76,11 @@ entries:
     version: 1.1.0
   - apiVersion: v1
     appVersion: "1"
-    created: "2020-10-05T15:08:30.245309497+02:00"
+    created: "2020-10-05T15:10:45.890589422+02:00"
     description: A chart for using as vcpe VNF
     digest: 51ef31e3bc27044e43677e711a2832d7123ebc6063acb23d6074afa947114898
     name: vcpe
     urls:
     - https://gabrielfdosreis.github.io/my-chart-repo/vcpe-1.0.1.tgz
     version: 1.0.1
-generated: "2020-10-05T15:08:30.240314957+02:00"
+generated: "2020-10-05T15:10:45.887276555+02:00"
