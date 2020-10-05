@@ -34,7 +34,7 @@ spec:
           command: ["sh", "-c", "ip address add 10.255.0.1/24 dev net1; tail -f /dev/null" ]
           securityContext:
             privileged: true
-          # ports:
+          ports: {}
           livenessProbe:
             exec:
               command:

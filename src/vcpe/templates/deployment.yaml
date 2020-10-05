@@ -30,7 +30,7 @@ spec:
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           command: [ "sh", "-ce", "tail -f /dev/null" ]
-          # ports:
+          ports: {}
           livenessProbe:
             exec:
               command:
