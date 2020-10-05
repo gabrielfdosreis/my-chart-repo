@@ -6,19 +6,7 @@ metadata:
 {{ include "vclass.labels" . | indent 4 }}
 spec:
   type: {{ .Values.service.type }}
-  ports:
-    - name: port5201
-      protocol: TCP
-      port: 5201
-      targetPort: port5201
-    - name: port3000
-      protocol: TCP
-      port: 3000
-      targetPort: port3000
-    - name: port7000
-      protocol: TCP
-      port: 7000
-      targetPort: port7000
+  # ports:
   selector:
     app.kubernetes.io/name: {{ include "vclass.name" . }}
     app.kubernetes.io/instance: {{ .Release.Name }}

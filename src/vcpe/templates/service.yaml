@@ -7,23 +7,6 @@ metadata:
 spec:
   type: {{ .Values.service.type }}
   # ports:
-  #   - port: {{ .Values.service.port }}
-  #     targetPort: http
-  #     protocol: TCP
-  #     name: http
-  ports:
-    - name: port5201
-      protocol: TCP
-      port: 5201
-      targetPort: port5201
-    - name: port3000
-      protocol: TCP
-      port: 3000
-      targetPort: port3000
-    - name: port7000
-      protocol: TCP
-      port: 7000
-      targetPort: port7000
   selector:
     app.kubernetes.io/name: {{ include "vcpe.name" . }}
     app.kubernetes.io/instance: {{ .Release.Name }}

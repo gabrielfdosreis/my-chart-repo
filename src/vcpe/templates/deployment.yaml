@@ -30,29 +30,13 @@ spec:
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           command: [ "sh", "-ce", "tail -f /dev/null" ]
-          ports:
-            - name: port5201
-              containerPort: 5201
-            - name: port3000
-              containerPort: 3000
-            - name: port7000
-              containerPort: 7000
+          # ports:
           livenessProbe:
             exec:
               command:
               - echo
               - "alive"
-            # tcpSocket:
-            #   port: port5201
-            # initialDelaySeconds: 60
-            # periodSeconds: 60
-            # failureThreshold: 30
           # readinessProbe:
-            # tcpSocket:
-            #   port: port5201
-            # initialDelaySeconds: 60
-            # periodSeconds: 60
-            # failureThreshold: 30
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
       {{- with .Values.nodeSelector }}

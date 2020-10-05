@@ -2,6 +2,8 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: {{ include "vclass.fullname" . }}
+  annotations:
+    k8s.v1.cni.cncf.io/networks: accessnet
   labels:
 {{ include "vclass.labels" . | indent 4 }}
 spec:
@@ -29,30 +31,16 @@ spec:
             {{- toYaml .Values.securityContext | nindent 12 }}
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
-          command: [ "sh", "-ce", "tail -f /dev/null" ]
-          ports:
-            - name: port5201
-              containerPort: 5201
-            - name: port3000
-              containerPort: 3000
-            - name: port7000
-              containerPort: 7000
+          command: ["sh", "-c", "ip address add 10.255.0.1/24 dev net1; tail -f /dev/null" ]
+          securityContext:
+            privileged: true
+          # ports:
           livenessProbe:
             exec:
               command:
               - echo
               - "alive"
-            # tcpSocket:
-            #   port: port5201
-            # initialDelaySeconds: 60
-            # periodSeconds: 60
-            # failureThreshold: 30
           # readinessProbe:
-            # tcpSocket:
-            #   port: port5201
-            # initialDelaySeconds: 60
-            # periodSeconds: 60
-            # failureThreshold: 30
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
       {{- with .Values.nodeSelector }}
