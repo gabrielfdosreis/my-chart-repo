@@ -2,8 +2,6 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: {{ include "vclass.fullname" . }}
-  annotations:
-    k8s.v1.cni.cncf.io/networks: accessnet
   labels:
 {{ include "vclass.labels" . | indent 4 }}
 spec:
@@ -17,6 +15,8 @@ spec:
       labels:
         app.kubernetes.io/name: {{ include "vclass.name" . }}
         app.kubernetes.io/instance: {{ .Release.Name }}
+      annotations:
+        k8s.v1.cni.cncf.io/networks: accessnet
     spec:
     {{- with .Values.imagePullSecrets }}
       imagePullSecrets:
