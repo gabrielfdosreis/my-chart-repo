@@ -3,48 +3,48 @@ entries:
   nginx:
   - apiVersion: v1
     appVersion: "1"
-    created: "2020-10-05T13:57:55.694754344+02:00"
+    created: "2020-10-05T15:03:30.607943427+02:00"
     digest: a47cf58147e04e35ef0bf8da875991f1a280d2fb65ba1ef7996dbb2e4436fa58
     name: nginx
     urls:
-    - https://user.github.io/helm-chart-repo/nginx-1.0.0.tgz
+    - https://gabrielfdosreis.github.io/my-chart-repo/nginx-1.0.0.tgz
     version: 1.0.0
   vclass:
   - apiVersion: v1
     appVersion: "1"
-    created: "2020-10-05T13:57:55.69553858+02:00"
+    created: "2020-10-05T15:03:30.60943925+02:00"
     description: A chart for using as vclass VNF
     digest: 8b462d6f4a1f28892ca891c6840aaee8a713ade07d8a1d913921e419ee61c0ed
     name: vclass
     urls:
-    - https://user.github.io/helm-chart-repo/vclass-1.1.0.tgz
+    - https://gabrielfdosreis.github.io/my-chart-repo/vclass-1.1.0.tgz
     version: 1.1.0
   - apiVersion: v1
     appVersion: "1"
-    created: "2020-10-05T13:57:55.695155762+02:00"
+    created: "2020-10-05T15:03:30.608702083+02:00"
     description: A chart for using as vclass VNF
     digest: 1e94c214f9a4d2869c878ae38f5c46045262b75c048963425a7d376e57088ce6
     name: vclass
     urls:
-    - https://user.github.io/helm-chart-repo/vclass-1.0.1.tgz
+    - https://gabrielfdosreis.github.io/my-chart-repo/vclass-1.0.1.tgz
     version: 1.0.1
   vcpe:
   - apiVersion: v1
     appVersion: "1"
-    created: "2020-10-05T13:57:55.69635151+02:00"
+    created: "2020-10-05T15:03:30.610877107+02:00"
     description: A chart for using as vcpe VNF
     digest: 9c5563caaf6dd734f8538b3df0f2b2a0bde1620c8a40aa9c5b744b485c9a581e
     name: vcpe
     urls:
-    - https://user.github.io/helm-chart-repo/vcpe-1.1.0.tgz
+    - https://gabrielfdosreis.github.io/my-chart-repo/vcpe-1.1.0.tgz
     version: 1.1.0
   - apiVersion: v1
     appVersion: "1"
-    created: "2020-10-05T13:57:55.695974845+02:00"
+    created: "2020-10-05T15:03:30.610173382+02:00"
     description: A chart for using as vcpe VNF
     digest: 51ef31e3bc27044e43677e711a2832d7123ebc6063acb23d6074afa947114898
     name: vcpe
     urls:
-    - https://user.github.io/helm-chart-repo/vcpe-1.0.1.tgz
+    - https://gabrielfdosreis.github.io/my-chart-repo/vcpe-1.0.1.tgz
     version: 1.0.1
-generated: "2020-10-05T13:57:55.688484359+02:00"
+generated: "2020-10-05T15:03:30.605357097+02:00"
